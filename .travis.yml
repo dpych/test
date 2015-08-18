@@ -2,4 +2,4 @@
 language: php
 php: 
 - 5.3
-script: phpunit test/test.php
+script: phpunit --configuration configuration.xml
