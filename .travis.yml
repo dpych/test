@@ -3,4 +3,10 @@ language: php
 php: 
 - 5.3
 script: phpunit --configuration test/configuration.xml --bootstrap test/bootstrap_jenkins.php test/
+deploy:
+	provider: releases
+	user: $USER
+	password: $PASSWD
+	file: 'index.php'
+	
 
